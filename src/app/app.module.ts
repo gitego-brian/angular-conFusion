@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import {
   MatButtonModule,
   MatCardModule,
@@ -13,6 +13,8 @@ import {
   MatGridListModule,
   MatInputModule,
   MatListModule,
+  MatSelectModule,
+  MatSlideToggleModule,
 } from "@angular/material";
 import { AppRoutingModule } from "./app-routing/app-routing.module";
 
@@ -48,6 +50,7 @@ import { LeaderService } from "./services/leader.service";
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     FlexLayoutModule,
     AppRoutingModule,
     MatToolbarModule,
@@ -59,6 +62,8 @@ import { LeaderService } from "./services/leader.service";
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
+    MatSelectModule,
+    MatSlideToggleModule,
   ],
   providers: [DishService, PromotionService, LeaderService],
   entryComponents: [LoginComponent],
