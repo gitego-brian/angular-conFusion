@@ -13,6 +13,7 @@ import {
   MatGridListModule,
   MatInputModule,
   MatListModule,
+  MatProgressSpinnerModule,
   MatSelectModule,
   MatSlideToggleModule,
 } from "@angular/material";
@@ -64,6 +65,7 @@ import { LeaderService } from "./services/leader.service";
     MatCheckboxModule,
     MatSelectModule,
     MatSlideToggleModule,
+    MatProgressSpinnerModule,
   ],
   providers: [DishService, PromotionService, LeaderService],
   entryComponents: [LoginComponent],
